@@ -12,7 +12,7 @@ const CreateSegment = () => {
   const handleFormSubmit = async (conditions) => {
     console.log(conditions)
     var customerDetails=[]
-    await axios.get("http://localhost:3001/api/orders").then((data)=>
+    await axios.get("https://crm-backend-ko8i.onrender.com/api/orders").then((data)=>
       
       {setRefresh(!refresh)
         console.log(data)
